@@ -6,6 +6,8 @@ class PigLatinizer
     words.collect do |word|
       if word[0].match(/\b[aeiouAEIOU]/)
         word + "ay"
+      else
+         word = word[0][1..-1] + word[0]
       end
     end
   #   words.collect do |word|
