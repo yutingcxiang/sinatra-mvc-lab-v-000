@@ -4,7 +4,7 @@ class PigLatinizer
   def latinize(text)
     words = text.split(" ")
     if words[0].match(/\b[aeiouAEIOU]/)
-      word + "way"
+      words + "way"
     else
       "nay"
     end
