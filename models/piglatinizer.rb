@@ -9,7 +9,7 @@ class PigLatinizer
       else
         word = word[1..-1] + word[0]
         if word[0].match(/[aeiouAEIOU]/) 
-          "#{word}"+ "ay"
+          word+ "ay"
         else 
           word = word[1..-1] + word[0] + "ay"
         end
