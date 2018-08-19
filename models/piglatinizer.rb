@@ -12,8 +12,10 @@ class PigLatinizer
         end
         word + "ay"
       end
-    end
-    words
+    end  
   end
 
+  def latinize_sent(text)
+    latinize(text).join(" ")
+  end
 end
