@@ -12,19 +12,8 @@ class PigLatinizer
         end
         word + "ay"
       end
+      words
     end
-  #   words.collect do |word|
-  #     if word[0].match(/\b[aeiouAEIOU]/)
-  #       word + "way"
-  #     else
-  #       word = word[0][1..-1] + word[0]
-  #       if word[0].match(/\b[aeiouAEIOU]/) 
-  #         word + "ay"
-  #       else 
-  #         word = word[1..-1] + word[0] + "ay"
-  #       end
-  #     end
-  #   end
-  #   words.join(" ")
   end
+
 end
