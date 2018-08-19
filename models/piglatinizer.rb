@@ -15,7 +15,7 @@ class PigLatinizer
     end  
   end
 
-  def latinize_sent(text)
+  def piglatinize(text)
     latinize(text).join(" ")
   end
 end
