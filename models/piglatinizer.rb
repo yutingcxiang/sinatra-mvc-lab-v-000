@@ -7,11 +7,14 @@ class PigLatinizer
       if word[0].match(/[aeiouAEIOU]/)
         word + "way"
       else
-        unless word[0].match(/[aeiouAEIOU]/) 
-          word = word[1..-1] + word[0]
+        word = word[1..-1] + word[0]
+        if word[0].match(/[aeiouAEIOU]/) 
+          word + "ay"
+        else 
+          word = word[1..-1] + word[0] + "ay"
         end
-        word + "ay"
       end
+    end
     words.join("","")
   end
   end
