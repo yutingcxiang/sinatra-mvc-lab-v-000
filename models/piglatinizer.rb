@@ -5,9 +5,12 @@ class PigLatinizer
     words = text.split(" ")
     words.collect do |word|
       if word[0].match(/\b[aeiouAEIOU]/)
-        word + "ay"
+        word + "way"
       else
-        word = word[1..-1] + word[0]
+        until word[0].match(/\b[aeiouAEIOU]/)
+          word = word[1..-1] + word[0]
+        end
+        word + "ay"
       end
     end
   #   words.collect do |word|
