@@ -8,7 +8,7 @@ class PigLatinizer
         word + "way"
       else
         word = word[1..-1] + word[0]
-        if word[0].match(/\b/) 
+        if word[0].match(/\b[aeiouAEIOU]/) 
           word + "ay"
         else 
           word = word[1..-1] + word[0] + "ay"
