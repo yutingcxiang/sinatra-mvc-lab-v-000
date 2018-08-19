@@ -3,7 +3,7 @@ class PigLatinizer
   
   def latinize(text)
     words = text.split(" ")
-    words
+    words[0]
     # words.collect do |word|
     #   if word[0].match(/\b[aeiouAEIOU]/)
     #     word + "way"
